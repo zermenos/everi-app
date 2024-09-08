@@ -14,6 +14,7 @@ app.listen(port, () => {
   console.log("server running on port 5000");
 });
 
+/*
 app.get("/api/sign-in", (req, res) => {
   console.log("get Auth Request");
   getAuthRequest(req, res);
@@ -39,7 +40,7 @@ const requestMap = new Map();
 // GetQR returns auth request
 async function getAuthRequest(req, res) {
   // Audience is verifier id
-  const hostUrl = "http://localhost:5000";
+  const hostUrl = "http://localhost:2000";
   const sessionId = 1;
   const callbackURL = "/api/callback";
   const audience =
@@ -150,3 +151,4 @@ async function callback(req, res) {
     .set("Content-Type", "application/json")
     .send(authResponse);
 }
+*/
